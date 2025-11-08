@@ -29,3 +29,7 @@ Tech Stack
 This is a project about an Airbnb platform and its associated benefits 
 
 
+Added initial README.md with project overview and tech stack
+
+
+
