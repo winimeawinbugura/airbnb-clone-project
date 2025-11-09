@@ -202,6 +202,13 @@ The key entities in the system include **Users**, **Properties**, **Bookings**, 
 
 ---
 
+### 🗺️ Entity Relationship Diagram (ERD)
+
+Below is the visual representation of the database structure used in the Airbnb Clone Project:
+
+![Airbnb Clone ERD](https://github.com/winimeawinbugura/airbnb-clone-project/blob/main/erd-diagram.png)
+
+
 This database design ensures **referential integrity** and supports **efficient data retrieval** for key operations like searching listings, managing bookings, and processing payments.
 
 Added Database Design section with entities, fields, and relationships
