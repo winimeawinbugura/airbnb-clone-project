@@ -1,4 +1,7 @@
-🏠 Airbnb Clone Project
+🏠 # Airbnb Clone Project
+
+## airbnb-clone-project
+This is a project about an Airbnb platform and its associated benefits
 
 Project Overview
 
@@ -25,12 +28,10 @@ Tech Stack
 
 
 
-# airbnb-clone-project
-This is a project about an Airbnb platform and its associated benefits 
+ 
 
 
-
-### Team Roles
+## Team Roles
 
 This project follows common software development team roles to ensure clear responsibilities and efficient collaboration. The descriptions below combine the roles mentioned in the project overview with standard responsibilities from industry best practices.
 
@@ -66,6 +67,50 @@ Defines and enforces API security measures (authentication, authorization, input
 
 
 
+
+
+
+
+## Technology Stack
+
+The Airbnb Clone Project integrates multiple technologies to simulate the development of a scalable, production-ready booking platform. Each component of the stack contributes to building a reliable, secure, and efficient system.
+
+### 1. Django
+A high-level Python web framework used for building robust backend systems. Django simplifies API creation, handles authentication, and manages server-side logic efficiently.
+
+### **2. MySQL**
+A powerful open-source relational database management system (RDBMS) used to store structured data such as user profiles, property listings, and booking transactions. MySQL ensures data consistency and supports complex queries.
+
+### **3. GraphQL**
+An API query language that enables clients to request exactly the data they need, reducing over-fetching and improving application performance. It enhances communication between the backend and frontend.
+
+### **4. Docker**
+A containerization platform that packages applications and dependencies into lightweight, portable containers. Docker ensures consistent deployment across different environments and simplifies development workflows.
+
+### **5. Git & GitHub**
+Version control and collaboration tools that enable distributed development. Git tracks code changes, while GitHub facilitates collaboration, code review, and CI/CD integration.
+
+### **6. GitHub Actions (CI/CD)**
+A continuous integration and delivery platform that automates testing, builds, and deployment. It ensures each code update is validated before merging into the production branch.
+
+### **7. RESTful APIs**
+A standardized architecture style for designing scalable web services. It allows communication between the backend and other systems using HTTP methods and structured responses.
+
+### **8. HTML, CSS, JavaScript**
+Frontend technologies (optional extension) used for building and styling the user interface. They help create interactive, responsive components that connect to backend APIs.
+
+### **9. Security Tools**
+A combination of authentication, authorization, and encryption mechanisms used to protect user data, manage access control, and ensure secure transactions throughout the system.
+
+
+
+**Summary**
+This stack ensures that the Airbnb Clone Project achieves modularity, scalability, and maintainability while aligning with real-world industry standards for backend and full-stack applications.
+
+
+
+
+Added Technology Stack section with explanations for each technology
 
 Added initial README.md with project overview and tech stack
 
