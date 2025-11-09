@@ -116,3 +116,94 @@ Added initial README.md with project overview and tech stack
 
 
 
+
+
+
+## Database Design
+
+The database for the Airbnb Clone Project follows a **relational model** using **MySQL**. It ensures data integrity, supports complex relationships, and maintains scalability for growing data.  
+
+The key entities in the system include **Users**, **Properties**, **Bookings**, **Reviews**, and **Payments**.
+
+---
+
+### **1. Users**
+**Description:** Stores information about individuals using the platform (both hosts and guests).  
+**Key Fields:**
+- `id` (Primary Key) — Unique identifier for each user  
+- `name` — Full name of the user  
+- `email` — Used for authentication and communication  
+- `role` — Defines whether the user is a host or a guest  
+- `date_joined` — Timestamp of when the account was created  
+
+---
+
+### **2. Properties**
+**Description:** Contains details about each property listed on the platform.  
+**Key Fields:**
+- `id` (Primary Key) — Unique identifier for each property  
+- `user_id` (Foreign Key) — References the user (host) who owns the property  
+- `title` — Property name or listing title  
+- `location` — City or region where the property is located  
+- `price_per_night` — Cost to rent the property per night  
+
+---
+
+### **3. Bookings**
+**Description:** Records transactions when a guest books a property.  
+**Key Fields:**
+- `id` (Primary Key) — Unique booking identifier  
+- `user_id` (Foreign Key) — References the guest making the booking  
+- `property_id` (Foreign Key) — References the booked property  
+- `check_in` — Start date of the booking  
+- `check_out` — End date of the booking  
+
+---
+
+### **4. Reviews**
+**Description:** Stores feedback left by guests after completing their stay.  
+**Key Fields:**
+- `id` (Primary Key) — Unique identifier for each review  
+- `user_id` (Foreign Key) — References the guest who left the review  
+- `property_id` (Foreign Key) — References the reviewed property  
+- `rating` — Numeric rating (e.g., 1–5 stars)  
+- `comment` — Text feedback from the guest  
+
+---
+
+### **5. Payments**
+**Description:** Tracks financial transactions related to bookings.  
+**Key Fields:**
+- `id` (Primary Key) — Unique identifier for each payment  
+- `booking_id` (Foreign Key) — References the booking being paid for  
+- `amount` — Total amount paid  
+- `payment_method` — e.g., card, PayPal, or mobile money  
+- `status` — Payment status (e.g., Pending, Completed, Failed)  
+
+---
+
+### **Entity Relationships**
+- A **User** can own multiple **Properties**.  
+- A **Property** can have many **Bookings**.  
+- A **Booking** belongs to one **User** (guest) and one **Property**.  
+- A **Booking** has one related **Payment** record.  
+- A **Property** can have multiple **Reviews**, each left by different **Users**.  
+
+---
+
+### **Database Model Summary**
+| Entity | Primary Key | Key Relationships |
+|:-------|:-------------|:------------------|
+| Users | id | 1 → Many Properties, 1 → Many Bookings, 1 → Many Reviews |
+| Properties | id | Many → 1 User, 1 → Many Bookings, 1 → Many Reviews |
+| Bookings | id | Many → 1 Property, Many → 1 User, 1 → 1 Payment |
+| Reviews | id | Many → 1 Property, Many → 1 User |
+| Payments | id | 1 → 1 Booking |
+
+---
+
+This database design ensures **referential integrity** and supports **efficient data retrieval** for key operations like searching listings, managing bookings, and processing payments.
+
+Added Database Design section with entities, fields, and relationships
+
+
