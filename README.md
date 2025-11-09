@@ -274,3 +274,102 @@ These features together provide a full-stack experience, reflecting real-world s
 
 
 
+
+
+
+
+## API Security
+
+Securing the backend APIs of the Airbnb Clone Project is critical to maintaining user trust, protecting sensitive data, and ensuring reliable platform performance. The following security measures will be implemented to safeguard both the system and its users.
+
+---
+
+### **1. Authentication**
+Authentication verifies the identity of users accessing the system. It ensures that only registered users can log in and interact with the platform.  
+**Implementation:**  
+- Use secure authentication methods such as JWT (JSON Web Tokens) or session-based tokens.  
+- Encrypt passwords using industry-standard hashing algorithms (e.g., bcrypt).  
+
+**Why it’s important:**  
+Prevents unauthorized access to user accounts and protects private information such as email addresses, profile data, and booking details.
+
+---
+
+### **2. Authorization**
+Authorization controls what authenticated users can do based on their roles (e.g., host vs. guest).  
+**Implementation:**  
+- Role-based access control (RBAC) to restrict actions such as property listing creation, booking approval, or data modification.  
+
+**Why it’s important:**  
+Ensures users can only perform actions permitted for their role, protecting system integrity and preventing data misuse.
+
+---
+
+### **3. Data Encryption**
+Data encryption secures information in transit and at rest.  
+**Implementation:**  
+- Use HTTPS (SSL/TLS) for all API communications.  
+- Encrypt sensitive fields (e.g., payment details, personal information) before database storage.  
+
+**Why it’s important:**  
+Prevents sensitive data (like payment info) from being intercepted or exposed during transmission.
+
+---
+
+### **4. Input Validation and Sanitization**
+Input validation ensures that only properly formatted data is accepted by the API.  
+**Implementation:**  
+- Validate and sanitize all inputs from users and external systems.  
+- Use frameworks’ built-in validation libraries to prevent injection attacks.  
+
+**Why it’s important:**  
+Prevents SQL injection, cross-site scripting (XSS), and other common vulnerabilities that could compromise the system.
+
+---
+
+### **5. Rate Limiting and Throttling**
+Limits the number of requests a client can make to the API within a specific time frame.  
+**Implementation:**  
+- Use middleware tools like Django REST Framework throttling or NGINX rate limiting.  
+
+**Why it’s important:**  
+Protects the server from denial-of-service (DoS) attacks and helps maintain system performance.
+
+---
+
+### **6. Logging and Monitoring**
+Tracks user activities and API interactions for auditing and troubleshooting.  
+**Implementation:**  
+- Maintain logs for login attempts, API requests, and error responses.  
+- Use monitoring tools to detect unusual activity or security breaches.  
+
+**Why it’s important:**  
+Supports early detection of security threats and helps developers trace malicious activity efficiently.
+
+---
+
+### **7. Secure Payment Processing**
+Payments are one of the most sensitive aspects of the application.  
+**Implementation:**  
+- Use secure payment gateways that comply with PCI DSS standards.  
+- Never store raw payment data in the system.  
+
+**Why it’s important:**  
+Ensures that all financial transactions are processed securely, protecting users from fraud or data theft.
+
+---
+
+### **8. API Key Management**
+Restricts access to internal or third-party APIs using secret keys or tokens.  
+**Implementation:**  
+- Store API keys securely in environment variables (not in source code).  
+- Rotate keys regularly and use access scopes for minimal privileges.  
+
+**Why it’s important:**  
+Prevents unauthorized access to system resources and protects the application from data leaks.
+
+---
+
+### **Summary**
+Implementing robust API security measures ensures that the Airbnb Clone Project maintains user privacy, data integrity, and trust. A secure backend forms the foundation for a scalable and sustainable application architecture.
+
