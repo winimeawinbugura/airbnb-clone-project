@@ -214,3 +214,63 @@ This database design ensures **referential integrity** and supports **efficient 
 Added Database Design section with entities, fields, and relationships
 
 
+
+
+
+
+## Feature Breakdown
+
+The Airbnb Clone Project is built around key features that replicate the core functionalities of the Airbnb platform. Each feature contributes to creating a realistic and seamless booking experience for users while showcasing backend engineering principles.
+
+---
+
+### **1. User Management**
+This feature handles user registration, login, authentication, and profile management. It ensures that both hosts and guests can securely access their accounts, manage personal information, and perform actions based on their roles (e.g., host or guest).
+
+---
+
+### **2. Property Management**
+Hosts can list their properties by providing details such as location, description, price per night, and available amenities. This feature also allows property updates, deletions, and image uploads, ensuring that listings remain accurate and engaging to potential guests.
+
+---
+
+### **3. Booking System**
+Enables guests to search, view, and book available properties for specific dates. It handles check-in/check-out logic, booking confirmations, and availability tracking while maintaining consistent relationships between users, properties, and payments.
+
+---
+
+### **4. Payment Processing**
+Manages secure transactions between guests and hosts. This includes calculating total booking costs, processing payments, and updating booking statuses. It integrates payment gateways or simulated payment flows to demonstrate real-world payment handling.
+
+---
+
+### **5. Reviews and Ratings**
+Allows guests to leave feedback and ratings after a stay. This feature contributes to trust and transparency in the platform by helping future guests make informed booking decisions and giving hosts insights into their service quality.
+
+---
+
+### **6. API Security**
+Implements authentication, authorization, and input validation measures to safeguard user and transaction data. It ensures only authenticated users can perform certain actions, following industry standards for secure backend development.
+
+---
+
+### **7. CI/CD Integration**
+Automates the development workflow using GitHub Actions. This feature continuously tests, builds, and deploys code changes, improving reliability and reducing manual deployment errors.
+
+---
+
+### **8. Database Design and Optimization**
+Ensures efficient data storage and retrieval through a relational MySQL schema. It maintains referential integrity between users, properties, bookings, and payments while supporting scalability and query performance.
+
+---
+
+### **9. Containerization and Deployment**
+Uses Docker for consistent development and deployment environments. Containers make it easy to replicate the setup across multiple systems and facilitate seamless team collaboration and CI/CD operations.
+
+---
+
+**Summary**
+These features together provide a full-stack experience, reflecting real-world software engineering processes — from user management and API design to database optimization and secure deployment.
+
+
+
